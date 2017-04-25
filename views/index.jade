@@ -20,8 +20,8 @@ html
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
               input(type="submit", value="Join").submit
-          h2(style="color: greenyellow;")
-            The Participation in this Slack implies acceptance of our #[a(href="http://msdevshow.com/slack/") Code of Conduct]. 
+          h2
+            The Participation in this Slack implies acceptance of our #[a(href="http://msdevshow.com/slack/", style="color:greenyellow;") Code of Conduct]. 
     script.
       var tokenRequired = #{tokenRequired};
       var form = document.getElementById('join-form');
