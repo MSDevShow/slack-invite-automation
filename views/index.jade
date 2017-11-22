@@ -15,11 +15,13 @@ html
           h2 #{__('HEADER', community)}
         .content
           .information
-            form(method="POST", action="/invite")#join-form.form
-              input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
-              if tokenRequired
-                input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
-              input(type="submit", value="Join").submit
+            p 
+              We are working on resolving issues with the signup form. Please have some patience while this get's fixed.
+            //- form(method="POST", action="/invite")#join-form.form
+            //-   input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+            //-   if tokenRequired
+            //-     input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
+            //-   input(type="submit", value="Join").submit
           h2
             The Participation in this Slack implies acceptance of our #[a(href="http://msdevshow.com/slack/", style="color:greenyellow;", target="_blank") Code of Conduct]. 
     script.
